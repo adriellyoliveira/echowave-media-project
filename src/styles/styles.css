@@ -1,0 +1,113 @@
+body {
+    background-color: #191919;
+}
+
+/* INICIO CONFIGURAÇÃO PADRÃO */
+
+h1 {
+    font-family: "Sora", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: #ffffffbb;
+}
+
+h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 70px;
+
+    background: linear-gradient(to right, #AF4163, #9B4DCA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* INICIO CONFIGURAÇÃO PADRÃO */
+
+/* INICIO HEADER */
+
+header {
+    width: 100%;
+    height: 140px;
+
+    padding: 32px 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav > a {
+    font-size: 18px;
+}
+
+ button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+
+    background: linear-gradient(45deg, #AF4163, #7F35B0) border-box;
+}
+
+header > img {
+    width: 236px;
+    height: 50px;
+}
+
+/* FIM HEADER NAV-BAR */
+
+/* INICIO HERO */
+
+.hero {
+    width: 100%;
+    height: 760px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(../assets/images/bg-cameraman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* FIM HERO */
+
+/* INICIO SESSÃO CLIENTES */
+
+.clients {
+    width: 100%;
+    height: 340px;
+
+    text-align: center;
+
+    padding: 30px 160px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
