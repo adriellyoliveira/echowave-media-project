@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EchoWave Media</title>
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,123 +12,145 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+
 </head>
 
 <body>
 
     <header>
-        <img src="./src/assets/images/echowave-media.svg" alt="Logo EchoWave Media">
-        <nav>
-            <a href="">Início</a>
-            <a href="">Soluções</a>
-            <a href="">Sobre Nós</a>
-            <a href="">Portfólio</a>
-            <a href="">FAQ</a>
-            <a href="">Contato</a>
-        </nav>
-        <button>Fale com a gente</button>
+        <div class="navbar">
+            <div class="nav-images">
+                <img src="./src/assets/images/echowave-media.svg" alt="Logo EchoWave Media">
+                <img src="./src/assets/images/menu-burger.svg" alt="">
+            </div>
+            <div class="nav-content">
+                <nav class="header-nav">
+                    <a href="">Início</a>
+                    <a href="">Soluções</a>
+                    <a href="">Sobre Nós</a>
+                    <a href="">Portfólio</a>
+                    <a href="">FAQ</a>
+                    <a href="">Contato</a>
+                </nav>
+                <button>Fale com a gente</button>
+            </div>
+        </div>
+
+
     </header>
 
 
-    <section class="hero">
-        <h1>Audiovisual estratégico para quem quer ir além</h1>
-        <p>Produção de conteúdo sob medida para marcas, artistas e criadores que buscam impacto real, com autenticidade
-            e qualidade técnica.</p>
-
-        <button>Fale com nossa equipe</button>
-    </section>
-
-
-    <section class="clients">
-        <h2>Nossos Clientes</h2>
-        <div class="partners">
-            <img src="./src/assets/images/line-studios-logo-oficial.svg" alt="Logo LINE Studios">
-            <img src="./src/assets/images/d-one-logo-oficial.svg" alt="Logo D-ONE">
-            <img src="./src/assets/images/purpledoxx-logo-oficial.svg" alt="Logo PurpleDoxx">
-            <img src="./src/assets/images/underline-magazine.svg" alt="Logo UNDERL!NE Magazine">
-        </div>
-    </section>
-
-
-    <section class="why-us">
-        <h2>Por que escolher a EchoWave</h2>
-        <p>Somos um estúdio criativo especializado em conteúdo audiovisual. Atuamos desde a concepção até a entrega
-            final, com foco em qualidade, propósito e resultado. Nossos processos são ágeis, personalizados e centrados
-            na sua visão.</p>
-
-        <div class="cards-why-us">
-            <div class="card-why-us">
-                <img src="./src/assets/images/camera.svg" alt="">
-                <div class="why-us-text">
-                    <h3>Profissionalismo técnico</h3>
-                    <p>Equipamentos de ponta e excelência em cada etapa da produção.</p>
-                </div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Audiovisual estratégico para quem quer ir além</h1>
+                <p>Produção de conteúdo sob medida para marcas, artistas e criadores que buscam impacto real, com
+                    autenticidade e qualidade técnica.</p>
             </div>
 
-            <div class="card-why-us">
-                <img src="./src/assets/images/users.svg" alt="">
-                <div class="why-us-text">
-                    <h3>Processo criativo colaborativo</h3>
-                    <p>A gente escuta, adapta e constrói junto com você.</p>
-                </div>
+            <a class="btn-padrao" href="">Fale com nossa equipe</a>
+        </section>
+
+        <section class="clients">
+            <h2>Nossos Clientes</h2>
+            <div class="partners">
+                <img src="./src/assets/images/line-studios-logo-oficial.svg" alt="Logo LINE Studios">
+                <img src="./src/assets/images/d-one-logo-oficial.svg" alt="Logo D-ONE">
+                <img src="./src/assets/images/purpledoxx-logo-oficial.svg" alt="Logo PurpleDoxx">
+                <img src="./src/assets/images/underline-magazine.svg" alt="Logo UNDERL!NE Magazine">
+            </div>
+        </section>
+
+        <section class="why-us">
+            <div class="why-us-content">
+                <h2>Por que escolher a EchoWave</h2>
+                <p>Somos um estúdio criativo especializado em conteúdo audiovisual. Atuamos desde a concepção até a
+                    entrega final, com foco em qualidade, propósito e resultado. Nossos processos são ágeis,
+                    personalizados e centrados na sua visão.</p>
             </div>
 
-            <div class="card-why-us">
-                <img src="./src/assets/images/trending.svg" alt="">
-                <div class="why-us-text">
-                    <h3>Entrega orientada a resultados</h3>
-                    <p>Projetos que engajam, conectam e geram valor real.</p>
+            <div class="cards-why-us">
+                <div class="card-why-us">
+                    <img src="./src/assets/images/camera.svg" alt="">
+                    <div class="why-us-text">
+                        <h3>Profissionalismo técnico</h3>
+                        <p>Equipamentos de ponta e excelência em cada etapa da produção.</p>
+                    </div>
+                </div>
+
+                <div class="card-why-us">
+                    <img src="./src/assets/images/users.svg" alt="">
+                    <div class="why-us-text">
+                        <h3>Processo criativo colaborativo</h3>
+                        <p>A gente escuta, adapta e constrói junto com você.</p>
+                    </div>
+                </div>
+
+                <div class="card-why-us">
+                    <img src="./src/assets/images/trending.svg" alt="">
+                    <div class="why-us-text">
+                        <h3>Entrega orientada a resultados</h3>
+                        <p>Projetos que engajam, conectam e geram valor real.</p>
+                    </div>
+                </div>
+
+                <div class="card-why-us">
+                    <img src="./src/assets/images/layers.svg" alt="">
+                    <div class="why-us-text">
+                        <h3>Flexibilidade e escala</h3>
+                        <p>Do criador solo à grande marca, a EchoWave se adapta a você.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="card-why-us">
-                <img src="./src/assets/images/layers.svg" alt="">
-                <div class="why-us-text">
-                    <h3>Flexibilidade e escala</h3>
-                    <p>Do criador solo à grande marca, a EchoWave se adapta a você.</p>
+        <section class="solutions">
+            <h2>Nossas Soluções</h2>
+            <p>Da criação à entrega, oferecemos uma estrutura completa para que seu conteúdo se destaque e alcance seus
+                objetivos.</p>
+            <div class="cards-solutions">
+                <div class="card-solutions">
+                    <img src="./src/assets/images/video-maker.jpg" alt="">
+                    <div class="card-solutions-text">
+                        <h3>Produção de Vídeo</h3>
+                        <p>Projetos que engajam, conectam e geram valor real.</p>
+                    </div>
+                </div>
+
+                <div class="card-solutions">
+                    <img src="./src/assets/images/video-editing.jpg" alt="">
+                    <div class="card-solutions-text">
+                        <h3>Edição & Pós-Produção</h3>
+                        <p>Cuidamos da montagem, cor, som e identidade visual.</p>
+                    </div>
+                </div>
+
+                <div class="card-solutions">
+                    <img src="./src/assets/images/social-media.jpg" alt="">
+                    <div class="card-solutions-text">
+                        <h3>Publicação com Propósito</h3>
+                        <p>Guiamos você na hora de levar seu conteúdo ao público ideal.</p>
+                    </div>
+                </div>
+
+                <div class="card-solutions">
+                    <img src="./src/assets/images/production.jpg" alt="">
+                    <div class="card-solutions-text">
+                        <h3>Direção Criativa</h3>
+                        <p>Ajudamos a dar forma à sua ideia com narrativas que conectam.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
 
-    <section class="solutions">
-        <h2>Nossas Soluções</h2>
-        <p>Da criação à entrega, oferecemos uma estrutura completa para que seu conteúdo se destaque e alcance seus objetivos.</p>
-        <div class="cards-solutions">
-            <div class="card-solutions">
-                <img src="./src/assets/images/video-maker.jpg" alt="">
-                <div class="card-solutions-text">
-                    <h3>Produção de Vídeo</h3>
-                    <p>Projetos que engajam, conectam e geram valor real.</p>
-                </div>
-            </div>
+    <footer>
 
-            <div class="card-solutions">
-                <img src="./src/assets/images/video-editing.jpg" alt="">
-                <div class="card-solutions-text">
-                    <h3>Edição & Pós-Produção</h3>
-                    <p>Cuidamos da montagem, cor, som e identidade visual.</p>
-                </div>
-            </div>
-
-            <div class="card-solutions">
-                <img src="./src/assets/images/social-media.jpg" alt="">
-                <div class="card-solutions-text">
-                    <h3>Publicação com Propósito</h3>
-                    <p>Guiamos você na hora de levar seu conteúdo ao público ideal.</p>
-                </div>
-            </div>
-
-            <div class="card-solutions">
-                <img src="./src/assets/images/production.jpg" alt="">
-                <div class="card-solutions-text">
-                    <h3>Direção Criativa</h3>
-                    <p>Ajudamos a dar forma à sua ideia com narrativas que conectam.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
 
 </body>
 
