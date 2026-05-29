@@ -264,6 +264,9 @@ header {
 
 .projects-carousel {
     padding: 32px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .project-card {
