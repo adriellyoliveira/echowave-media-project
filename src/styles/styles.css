@@ -229,7 +229,7 @@ header {
     flex-direction: column;
 }
 
-.card-solutions > img {
+.card-solutions>img {
     width: 380px;
     border-radius: 16px 16px 0 0;
 }
@@ -240,7 +240,7 @@ header {
     gap: 16px;
 }
 
-.card-solutions-text > p {
+.card-solutions-text>p {
     font-size: 20px;
 }
 
@@ -257,6 +257,58 @@ header {
     flex-direction: column;
     gap: 36px;
     text-align: center;
+}
+
+.project-card {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+
+    img {
+        width: 380px;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.project-card:hover {
+    .project-card-content-info {
+        padding: 8px 16px;
+        background-color: var(--card-color);
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0px 0px 10px 10px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .project-card-content {
+        border-radius: 0px;
+    }
+}
+
+.project-card-content {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-color);
+    border-radius: 0px 0px 10px 10px;
+
+    h4 {
+        width: 260px;
+        font-size: 24px;
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+.project-card-content-info {
+    display: none;
 }
 
 
@@ -283,7 +335,7 @@ header {
 
     /* HEADER - INICIO */
 
-    header{
+    header {
         padding: 60px 160px;
     }
 
@@ -307,7 +359,7 @@ header {
         gap: 32px;
     }
 
-    .header-nav > a {
+    .header-nav>a {
         font-size: 18px;
         color: var(--paragraph-color-02);
     }
@@ -357,11 +409,11 @@ header {
 
     .cards-solutions {
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 
-/* SEÇÃO SOLUÇÕES - FIM */
+    /* SEÇÃO SOLUÇÕES - FIM */
 
 }
