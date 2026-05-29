@@ -246,6 +246,19 @@ header {
 
 /* SEÇÃO SOLUÇÕES - FIM */
 
+/* SEÇÃO PROJETOS - INICIO */
+
+.projects {
+    padding: 32px 20px;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    text-align: center;
+}
+
 
 
 /* ===== MEDIA QUERY ===== */
@@ -259,6 +272,15 @@ header {
 
 
 @media (min-width: 1280px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
     /* HEADER - INICIO */
 
     header{
