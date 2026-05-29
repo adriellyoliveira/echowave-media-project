@@ -250,6 +250,9 @@ header {
 
 .projects {
     padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
 }
 
 .projects-content {
@@ -259,16 +262,47 @@ header {
     text-align: center;
 }
 
+.projects-carousel {
+    padding: 32px 20px;
+}
+
 .project-card {
     width: 380px;
     display: flex;
     flex-direction: column;
     transition: 1s;
+}
+
+.project-card-media {
+    position: relative;
+
+    h2 {
+        font-size: 300px;
+    }
+}
+
+.project-number {
+    position: absolute;
+    top: -190px;
+    left: -20px;
+    z-index: 0;
+}
+
+
+.project-card-img {
+    position: relative;
+    width: 380px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
 
     img {
-        width: 380px;
-        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        display: block;
     }
+}
+
+.btn-project-card {
+    display: none;
 }
 
 .project-card:hover {
@@ -287,6 +321,25 @@ header {
     .project-card-content {
         border-radius: 0px;
     }
+
+    .btn-project-card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.404);
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        gap: 4px;
+    }
+
+    .btn-project-card:hover {
+        background: var(--button-padrao);
+    }
+    
 }
 
 .project-card-content {
