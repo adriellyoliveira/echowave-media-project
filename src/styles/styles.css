@@ -263,20 +263,34 @@ header {
 }
 
 .projects-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-cards {
     padding: 32px 20px;
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
+.project-advice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    p{
+        font-size: 14px;
+    }
+}
+
 .project-card {
     width: 380px;
     display: flex;
     flex-direction: column;
-    transition: 1s;
-}
 
-.project-card-media {
     position: relative;
 
     h2 {
@@ -317,10 +331,15 @@ header {
 
         p {
             font-size: 14px;
+            font-weight: 600;
         }
     }
 
     .project-card-content {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .project-card-content-text {
         border-radius: 0px;
     }
 
@@ -350,21 +369,30 @@ header {
 
 }
 
-.project-card-content {
+.project-card-content-text {
     padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
     background-color: var(--card-color);
     border-radius: 0px 0px 10px 10px;
 
     h4 {
         width: 260px;
         font-size: 24px;
+        font-weight: 600;
     }
 
-    img {
+    .project-img {
+        display: flex;
+        justify-content: center;
         width: 40px;
+        height: 50px;
+
+        img {
+            width: 60px;
+        }
     }
 }
 
