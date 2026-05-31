@@ -1,6 +1,8 @@
 :root {
     --backgroud-color: #191919;
-    --background-color-02: #202020;
+    --background-color-02: #20202056;
+    --cor-form: #212121;
+    --cor-form-field: #272727;
 
     --title-color: linear-gradient(to right, #AF4163, #9B4DCA);
     --title-color-secondary: #ffffff;
@@ -8,7 +10,9 @@
     --paragraph-color-02: #ffffff;
 
     --card-color: #212121;
-    --button-padrao: linear-gradient(to right, #AF4163, #9B4DCA);
+    --button-standard-color: linear-gradient(to right, #AF4163, #9B4DCA);
+    --button-primary-color: #AF4163;
+    --button-secondary-color: #9B4DCA;
 
     --title-font: "Sora", sans-serif;
     --text-font: "Inter", sans-serif;
@@ -54,10 +58,15 @@ p {
 
 .btn-padrao {
     padding: 10px 20px;
-    border-radius: 50%;
-    background: transparent;
-    border: 3px solid transparent;
-    border-image: var(--button-padrao) 1;
+    border-radius: 50px;
+    background: var(--button-standard-color);
+    font-weight: 500;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--button-standard-color);
     font-weight: 500;
 }
 
@@ -191,6 +200,7 @@ header {
 .solutions {
     width: 100%;
     background-color: var(--background-color-02);
+    backdrop-filter: blur(10px);
     padding: 32px 20px;
     gap: 65px;
     display: flex;
@@ -249,6 +259,7 @@ header {
 /* SEÇÃO PROJETOS - INICIO */
 
 .projects {
+    width: 100%;
     padding: 32px 20px;
     display: flex;
     flex-direction: column;
@@ -359,7 +370,10 @@ header {
     }
 
     .btn-project-card:hover {
-        background: var(--button-padrao);
+        background: var(--button-standard-color);
+        box-shadow:
+        0 0 10px rgba(175, 65, 99, 0.5),
+        0 0 20px rgba(155, 77, 202, 0.4);
     }
 
     .project-number {
@@ -400,6 +414,79 @@ header {
     display: none;
 }
 
+/* SEÇÃO PROJETOS - FIM */
+
+
+/* SEÇÃO CONTATO - INICIO */
+
+.contact {
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    background-color: var(--background-color-02);
+    backdrop-filter: blur(10px);
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    text-align: center;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-logo {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/images/bg-cameraman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.contact-form-content {
+    padding: 36px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--cor-form);
+    border-radius: 0px 0px 16px 16px;
+}
+
+.contact-field-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form-field {
+    padding: 12px;
+    background-color: var(--cor-form-field);
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+#message {
+    height: 200px;
+}
+
 
 
 /* ===== MEDIA QUERY ===== */
@@ -407,6 +494,31 @@ header {
 @media (min-width: 768px) {
     .card-why-us {
         width: 580px;
+    }
+
+    /* SEÇÃO CONTATOS - COMEÇO */
+
+    .contact {
+        padding: 32px 64px;
+    }
+
+    .contact-logo {
+        width: 330px;
+        height: 610px;
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .contact-form-content {
+        width: 650px;
+        height: 100%;
+        border-radius: 0px 16px 16px 0px;
     }
 }
 
@@ -505,4 +617,30 @@ header {
 
     /* SEÇÃO SOLUÇÕES - FIM */
 
+    /* SEÇÃO CONTATOS - COMEÇO */
+
+    .contact {
+        padding: 64px 166px;
+    }
+
+    .contact-logo {
+        width: 330px;
+        height: 610px;
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .contact-form-content {
+        width: 650px;
+        height: 100%;
+        border-radius: 0px 16px 16px 0px;
+    }
+
+    /* SEÇÃO CONTATOS - FIM */
 }
