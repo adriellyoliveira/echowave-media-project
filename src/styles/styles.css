@@ -298,7 +298,7 @@ header {
     align-items: center;
     gap: 8px;
 
-    p{
+    p {
         font-size: 14px;
     }
 }
@@ -378,8 +378,8 @@ header {
     .btn-project-card:hover {
         background: var(--button-standard-color);
         box-shadow:
-        0 0 10px rgba(175, 65, 99, 0.5),
-        0 0 20px rgba(155, 77, 202, 0.4);
+            0 0 10px rgba(175, 65, 99, 0.5),
+            0 0 20px rgba(155, 77, 202, 0.4);
     }
 
     .project-number {
@@ -539,11 +539,11 @@ textarea {
 
 .faq-icon {
     width: 62px;
-    height: 62px; 
+    height: 62px;
     border-radius: 100%;
     background: var(--button-standard-color);
     transition: transform 0.2s ease;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -559,7 +559,7 @@ textarea {
 }
 
 .faq-info {
-    border-top: 1px solid transparent; 
+    border-top: 1px solid transparent;
     border-image: var(--button-standard-color) 1;
 
     margin-top: 16px;
@@ -574,6 +574,8 @@ textarea {
 /* SEÇÃO FAQ - FIM */
 
 
+
+/* SEÇÃO CTA - COMEÇO */
 .cta {
     padding: 32px 20px;
     display: flex;
@@ -617,6 +619,76 @@ textarea {
     }
 }
 
+/* SEÇÃO CTA - FIM */
+
+
+/* FOOTER - COMEÇO */
+
+footer {
+    padding: 32px 20px;
+    background-color: var(--background-color-02);
+    backdrop-filter: blur(10px);
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 40px 0px 60px 0px;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+    border-top: 1px solid transparent;
+    border-image: var(--button-standard-color) 1;
+    margin-top: 16px;
+    padding: 60px 0px 60px 0px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h5 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    a {
+        font-size: 18px;
+    }
+}
+
+.footer-credits {
+    text-align: center;
+
+    border-top: 1px solid transparent;
+    border-image: var(--button-standard-color) 1;
+    margin-top: 16px;
+    padding: 60px 0px 20px 0px;
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* FOOTER - FIM */
+
 
 
 /* ===== MEDIA QUERY ===== */
@@ -635,7 +707,8 @@ textarea {
     .projects,
     .contact,
     .faq,
-    .banner {
+    .banner,
+    footer {
         padding: 32px 64px;
     }
 
@@ -657,14 +730,37 @@ textarea {
         height: 100%;
         border-radius: 0px 16px 16px 0px;
     }
+
+    /* SEÇÃO CONTATOS - FIM */
+
+
+
+    /* SEÇÃO CTA - COMEÇO */
+
+    .overlay {
+        justify-content: left;
+    }
+
+    /* SEÇÃO CTA - FIM */
+
+
+
+    /* FOOTER - COMEÇO */
+
+    .footer-logo {}
+
+    .footer-container-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-columns {
+        border-top: none;
+        padding: 0px;
+    }
+
+    /* FOOTER - FIM */
 }
-
-
-.overlay {
-    justify-content: left;
-}
-
-/* SEÇÃO CONTATOS - FIM */
 
 
 
@@ -686,7 +782,8 @@ textarea {
     .projects,
     .contact,
     .faq,
-    .banner {
+    .banner,
+    footer {
         padding: 64px 166px;
     }
 
@@ -734,7 +831,7 @@ textarea {
     /* HEADER - FIM */
 
 
-    
+
     /* HERO - INICIO */
 
     .hero {
@@ -819,4 +916,11 @@ textarea {
     }
 
     /* SEÇÃO CTA - FIM */
+
+
+    /* FOOTER - COMEÇO */
+
+    
+
+    /* FOOTER - FIM */
 }
