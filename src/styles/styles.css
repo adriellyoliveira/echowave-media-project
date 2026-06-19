@@ -23,6 +23,10 @@
 
 /* GERAL */
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     width: 100%;
     background-color: var(--backgroud-color);
