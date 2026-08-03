@@ -1,5 +1,6 @@
 :root {
     --backgroud-color: #191919;
+    --backgroud-color-transparent: linear-gradient(to bottom, #191919e8,#19191994, #19191962, #19191905);
     --background-color-02: #20202056;
     --cor-form: #212121;
     --cor-form-field: #272727;
@@ -92,12 +93,16 @@ p {
 /* HEADER - INICIO */
 
 header {
+    position: relative;
     width: 100%;
 
     display: flex;
     flex-direction: column;
 
-    padding: 32px 20px;
+    background-image: url(../assets/images/bg-cameraman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .nav-images {
@@ -105,6 +110,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar {
+    padding: 32px 20px;
+    background: var(--backgroud-color-transparent);
 }
 
 .nav-content {
@@ -127,10 +137,6 @@ header {
     gap: 32px;
     justify-content: center;
     align-items: center;
-
-    background-image: url(../assets/images/bg-cameraman.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .hero-content {
@@ -834,11 +840,8 @@ footer {
 
     /* HEADER - INICIO */
 
-    header {
-        padding: 60px 160px;
-    }
-
     .navbar {
+        padding: 48px 64px;
         display: flex;
         align-items: center;
         justify-content: space-between;
